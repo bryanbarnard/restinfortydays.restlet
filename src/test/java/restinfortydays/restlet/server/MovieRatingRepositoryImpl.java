@@ -1,4 +1,4 @@
-package server;
+package restinfortydays.restlet.server;
 
 import restinfortydays.restlet.common.*;
 import java.util.ArrayList;

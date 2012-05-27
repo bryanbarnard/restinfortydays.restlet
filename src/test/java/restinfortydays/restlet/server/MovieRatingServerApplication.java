@@ -1,4 +1,4 @@
-package server;
+package restinfortydays.restlet.server;
 
 import org.restlet.Application;
 import org.restlet.Restlet;
