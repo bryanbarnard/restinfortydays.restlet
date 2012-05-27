@@ -1,4 +1,4 @@
-package common;
+package restinfortydays.restlet.common;
 
 import org.restlet.resource.Delete;
 import org.restlet.resource.Get;

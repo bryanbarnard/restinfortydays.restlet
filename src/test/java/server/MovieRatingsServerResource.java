@@ -1,7 +1,7 @@
 package server;
 
 import org.restlet.resource.ServerResource;
-import common.*;
+import restinfortydays.restlet.common.*;
 
 
 import java.util.List;

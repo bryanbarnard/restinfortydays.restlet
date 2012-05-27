@@ -1,6 +1,6 @@
 package server;
 
-import common.*;
+import restinfortydays.restlet.common.*;
 import java.util.ArrayList;
 import java.util.List;
 

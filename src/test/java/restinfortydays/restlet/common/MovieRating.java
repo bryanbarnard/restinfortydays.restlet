@@ -1,4 +1,4 @@
-package common;
+package restinfortydays.restlet.common;
 
 public class MovieRating {
 
