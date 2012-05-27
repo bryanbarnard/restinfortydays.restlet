@@ -2,7 +2,8 @@ package restinfortydays.restlet.server;
 
 import org.restlet.data.Status;
 import org.restlet.resource.ServerResource;
-import restinfortydays.restlet.common.*;
+import restinfortydays.restlet.common.MovieRating;
+import restinfortydays.restlet.common.MovieRatingResource;
 
 public class MovieRatingServerResource extends ServerResource implements MovieRatingResource {
 

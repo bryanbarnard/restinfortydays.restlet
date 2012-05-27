@@ -4,7 +4,6 @@ public interface MovieRatingRepository {
 
     /**
      * find a movieRating by id
-     *
      * @param movieRatingIdIn
      * @return
      */

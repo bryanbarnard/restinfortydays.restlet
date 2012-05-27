@@ -1,6 +1,7 @@
 package restinfortydays.restlet.server;
 
-import restinfortydays.restlet.common.*;
+import restinfortydays.restlet.common.MovieRating;
+import restinfortydays.restlet.common.MovieRatingRepository;
 import java.util.ArrayList;
 import java.util.List;
 

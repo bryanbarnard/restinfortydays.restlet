@@ -1,7 +1,7 @@
 package restinfortydays.restlet.server;
 
 import org.restlet.resource.ServerResource;
-import restinfortydays.common.RootResource;
+import restinfortydays.restlet.common.RootResource;
 
 public class RootServerResource extends ServerResource implements RootResource {
 

@@ -1,8 +1,8 @@
 package restinfortydays.restlet.server;
 
 import org.restlet.resource.ServerResource;
-import restinfortydays.restlet.common.*;
-
+import restinfortydays.restlet.common.MovieRating;
+import restinfortydays.restlet.common.MovieRatingsResource;
 
 import java.util.List;
 
