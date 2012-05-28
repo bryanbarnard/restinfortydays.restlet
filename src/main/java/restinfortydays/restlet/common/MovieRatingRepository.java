@@ -4,6 +4,7 @@ public interface MovieRatingRepository {
 
     /**
      * find a movieRating by id
+     *
      * @param movieRatingIdIn
      * @return
      */
@@ -11,15 +12,18 @@ public interface MovieRatingRepository {
 
     /**
      * update an existing movieRating
+     *
      * @param movieRating
      * @return
      */
-    MovieRating update(MovieRating movieRating);
+    boolean update(MovieRating movieRating);
 
     /**
      * add a movieRating to the repo
+     *
      * @param movieRating
      */
     MovieRating store(MovieRating movieRating);
 
+    boolean remove(Integer movieRatingIdIn);
 }

@@ -1,5 +1,6 @@
 package restinfortydays.restlet.common;
 
+import org.restlet.representation.Representation;
 import org.restlet.resource.Get;
 import org.restlet.resource.Post;
 
@@ -11,6 +12,5 @@ public interface MovieRatingsResource {
     public List<MovieRating> represent();
 
     @Post
-    public MovieRating add(MovieRating movieRatingIn);
-
+    public void add(Representation entity);
 }
