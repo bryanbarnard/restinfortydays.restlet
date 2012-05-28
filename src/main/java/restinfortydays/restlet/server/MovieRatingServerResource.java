@@ -10,11 +10,19 @@ import restinfortydays.restlet.common.MovieRatingResource;
 
 public class MovieRatingServerResource extends ServerResource implements MovieRatingResource {
 
+    private Integer ratingId;
+
     @Override
-    public MovieRating represent(Integer movieRatingIdIn) {
-        /* get(id) */
+    protected void doInit() {
+        String rId = (String) getRequestAttributes().get("ratingId");
+        this.ratingId = Integer.parseInt(rId);
+    }
+
+    @Override
+    public MovieRating represent() {
+        /* GET(id) */
         setStatus(Status.SUCCESS_OK);
-        return MovieRatingRepositoryImpl.getInstance().find(movieRatingIdIn);
+        return MovieRatingRepositoryImpl.getInstance().find(this.ratingId);
     }
 
     @Override
@@ -45,8 +53,7 @@ public class MovieRatingServerResource extends ServerResource implements MovieRa
     @Override
     public void remove(Integer movieRatingIdIn) {
         /* DELETE */
-        MovieRatingRepositoryImpl.getInstance().remove(movieRatingIdIn);
-
+        MovieRatingRepositoryImpl.getInstance().remove(this.ratingId);
         setStatus(Status.SUCCESS_OK);
     }
 }

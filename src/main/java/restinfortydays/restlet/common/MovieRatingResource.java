@@ -8,7 +8,7 @@ import org.restlet.resource.Put;
 public interface MovieRatingResource {
 
     @Get
-    public MovieRating represent(Integer movieRatingIdIn);
+    public MovieRating represent();
 
     @Put
     public void store(Representation entity);

@@ -30,7 +30,12 @@ public class MovieRatingRepositoryImpl implements MovieRatingRepository {
     }
 
     public MovieRating find(Integer movieRatingIdIn) {
-        return this.movies.get(movieRatingIdIn);
+        for (int i = 0; i < this.movies.size(); i++) {
+            if (this.movies.get(i).getId() == movieRatingIdIn) {
+                return this.movies.get(i);
+            }
+        }
+        return this.movies.get(0); /* default */
     }
 
     public List<MovieRating> all() {
